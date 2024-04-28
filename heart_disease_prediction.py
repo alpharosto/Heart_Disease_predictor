@@ -14,9 +14,12 @@ import seaborn as sns
 import warnings
 from sklearn.model_selection import KFold, StratifiedKFold, cross_val_score
 from sklearn import linear_model, tree, ensemble
+import os
+os.environ["QT_QPA_PLATFORM"] = "xcb"
 
-from google.colab import files
-uploaded=files.upload()
+
+
+
 
 df = pd.read_csv("./heart.csv")
 print(df)
